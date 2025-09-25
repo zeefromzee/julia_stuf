@@ -3,8 +3,10 @@
 # List of possible choices
 choices = ["Rock", "Paper", "Scissors"]
 
-# Set the user choice here
-user_choice = "Rock"  # <-- Edit this to change your choice
+# Prompt the user for their choice
+println("Enter your choice (Rock, Paper, or Scissors): ")
+user_choice = readline()
+user_choice = capitalize(strip(user_choice))  # Standardize input
 
 println("The choice you made is: ", user_choice)
 
