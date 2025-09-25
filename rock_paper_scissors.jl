@@ -6,7 +6,7 @@ choices = ["Rock", "Paper", "Scissors"]
 # Prompt the user for their choice
 println("Enter your choice (Rock, Paper, or Scissors): ")
 user_choice = readline()
-user_choice = capitalize(strip(user_choice))  # Standardize input
+user_choice = titlecase(strip(user_choice))  # Standardize input
 
 println("The choice you made is: ", user_choice)
 
